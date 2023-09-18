@@ -1,9 +1,9 @@
 class RackApp
    def call (env)
       [200,
-        {"Content-Type" => "text/html; charset=utf-8"},
+        {"content-type" => "text/html; charset=utf-8"},
         [
-          "Rack Rolling Ruby Norton with #{RUBY_VERSION} on #{RUBY_PLATFORM} at #{Time.now}"
+          "Rack Rolling Ruby with #{RUBY_VERSION} on #{RUBY_PLATFORM} at #{Time.now}"
         ]
       ]
    end
